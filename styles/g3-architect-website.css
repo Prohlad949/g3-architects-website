@@ -1,53 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* common styles */
-.work-sans-font{
+.work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-
 /* shared styles */
-.display-flex{
-    display: flex;
+.display-flex {
+  display: flex;
 }
-.dark-1{
-    color: rgba(19, 19, 19, 1);
+.dark-1 {
+  color: rgba(19, 19, 19, 1);
 }
-.dark-2{
-    color: rgba(66, 66, 66, 1);
+.dark-2 {
+  color: rgba(66, 66, 66, 1);
 }
-.bg-color{
-    background-color: rgba(255, 144, 14, 0.1);
+.dark-3 {
+  color: (114, 114, 114, 1);
+}
+.bg-color {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 144, 14, 1);
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 20px 25px;
+  border-radius: 8px;
+  border: none;
 }
 
 /* navber styles */
-.navbar{
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  justify-content: space-between;
+  align-items: center;
 }
-  
-.brand{
-    font-weight: bold;
-    font-size: 2.8rem;
-    /* margin: 50px 0px 0px 228px; */
-}
-.nav-links{
 
+.brand {
+  font-weight: bold;
+  font-size: 2.8rem;
 }
-.nav-item{
-    list-style: none;
-    margin-right: 30px;
-    
+.nav-links {
 }
-.nav-link{
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
 }
-.navber, .banner{
-    max-width: 1440px;
-    margin: 0 auto;
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.navber,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* banner styles */
+.banner-content {
+  max-width: 860px;
+  margin: 0px auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+.banner-description {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.banner-image {
+  width: 100%;
+}
+
+/* media quarey styles */
+@media screen and (max-width: 635px) {
+  .navbar {
+    flex-direction: column;
+  }
 }
