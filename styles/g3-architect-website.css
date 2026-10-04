@@ -178,6 +178,19 @@ main > section {
     filter: grayscale(100%);
 }
 
+/* footer section styles */
+.footer-section{
+    max-width: 1440px;
+    margin-top: 130px;
+    
+}
+.footer-info{
+    font-size: 1.25rem;
+    text-align: center;
+    border-radius: 8px;
+    padding: 39px 410px;
+}
+
 
 /* media quarey styles */
 @media screen and (max-width: 576px) {
@@ -200,7 +213,13 @@ main > section {
   .sponsor-companies{
     gap: 50px;
   }
+  .footer-info{
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
 }
+
+
 
 @media screen and (min-width: 536px) and (max-width: 992px) {
   .teams {
@@ -226,6 +245,10 @@ main > section {
   }
   .sponsor-companies{
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 20px;
+  }
+  .footer-info{
+    margin: 10px auto;
+    padding: 20px 30px;
   }
   }
