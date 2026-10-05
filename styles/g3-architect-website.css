@@ -145,6 +145,9 @@ main > section {
   font-weight: 600;
   font-size: 1.25rem;
 }
+.architect-img{
+    width: 100%;
+}
 #experience-badge {
   padding: 35px 30px;
   margin-left: -70px;
@@ -232,7 +235,8 @@ main > section {
 /* media quarey styles */
 @media screen and (max-width: 576px) {
   .navbar,
-  .teams {
+  .teams,
+  .futures {
     flex-direction: column;
   }
   .team-container,
@@ -242,6 +246,10 @@ main > section {
   }
   .our-futures {
     margin: 20px auto;
+  }
+  #experience-badge{
+    margin: 20px 0;
+    width: 100%;
   }
   .fact-card {
     width: 100%;
@@ -256,13 +264,18 @@ main > section {
   }
 }
 
-@media screen and (min-width: 536px) and (max-width: 992px) {
-  .teams {
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .teams,
+  .futures {
     flex-direction: column;
   }
   .our-futures {
     margin: 20px auto;
   }
+  #experience-badge{
+    margin: 10px 0;
+    width: 100%;
+}
   .facts-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
